@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title class="fas fa-heart">Case1</title>
+
+
+</head>
+<body>
+<script src="main.case.js"></script>
+<link rel="stylesheet" href="indexCase.css">
+<div class="conti">
+    <div class="products">
+        <div class="tile"><h1 style="text-align: center">Danh sách các mặt hàng </h1></div>
+        <table class="produclist">
+            <thead class="maubang">
+            <tr>
+                <th>Mã</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Ảnh minh họa</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Iphone 12 promax</td>
+                <td>$<span class="amount">400</span></td>
+                <td><img src="img.png" width="50" height="50"></td>
+                <td>
+                    <button type="button" onclick="addCarto(this)">Thêm</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Iphone 12</td>
+                <td>$<span class="amount">500</span></td>
+                <td><img src="img_2.png" width="50" height="50"></td>
+                <td>
+                    <button type="button" onclick="addCarto(this)">Thêm</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Iphone 13 promax</td>
+                <td>$<span class="amount">550</span></td>
+                <td><img src="img_1.png" width="50" height="50"></td>
+                <td>
+                    <button type="button" onclick="addCarto(this)">Thêm</button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Iphone 13 promax</td>
+                <td>$<span class="amount">600</span></td>
+                <td><img src="img_3.png" width="50" height="50"></td>
+                <td>
+                    <button type="button" onclick="addCarto(this)">Thêm</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <hr>
+        <div class="shopping">
+            <div class="tolle"><h1>Giỏ hàng của bạn</h1></div>
+            <table id="CartItem" class="cart-items" style="display: none">
+                <thead>
+                <tr>
+                    <th>Mã</th>
+                    <th>Tên</th>
+                    <th>Giá</th>
+                    <th>  </th>
+                </tr>
+                </thead>
+                <tbody id="CartBody"></tbody>
+            </table>
+        </div>
+                <div id="grandTotal" class="granTotal" style="display: none">
+                    Tổng tiền thanh toán là : $<span id="Total">400</span>
+                </div>
+                <div id="emtyCar" class="emtyCar">
+                 Bạn Chưa chọn sản phẩm nào
+                </div>
+        <div>
+            <button id = "thanhtoan" onclick="showTotal()">Thanh toán</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
